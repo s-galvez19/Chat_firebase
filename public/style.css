@@ -239,6 +239,7 @@ body {
     flex-direction: column;
     height: 100vh;
     background: url('../img/chat-bg.jpg') 0 0 no-repeat;
+    background-size: cover;
   }
   
   .chat-header {
@@ -270,7 +271,6 @@ body {
   
   .chat-messages {
     flex: 1;
-    background-size: cover;
     overflow-y: auto;
   }
   
@@ -301,16 +301,19 @@ body {
     fill: #fff;
   }
   
+  .bubble {
+    min-width: 80px;
+  }
   
   .msg-bubble-left {
     display: inline-block;
     padding: 15px;
     background: #fff;
     position: relative;
-    -moz-border-radius: 0px 10px 10px 10px;
-    -webkit-border-radius: 0px 10px 10px 10px;
-    border-radius: 0px 10px 10px 10px;
-    margin-left: 30px;
+    -moz-border-radius: 0px 10px 0px 10px;
+    -webkit-border-radius: 0px 10px 0px 10px;
+    border-radius: 0px 10px 0px 10px;
+    margin-left: 10px;
   }
   
   .msg-bubble-left:before {
@@ -325,16 +328,24 @@ body {
      border-bottom: 20px solid transparent;
   }
   
+  .msg-bubble-left .msg-date-time {
+    font-size: 8px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 5px;
+  }
+  
   .msg-bubble-right {
     right: 0;
     display: inline-block;
     padding: 15px;
     background: #ffeb3b;
     position: relative;
-    -moz-border-radius: 10px 0px 10px 10px;
-    -webkit-border-radius: 10px 0px 10px 10px;
-    border-radius: 10px 0px 10px 10px;
-    margin-right: 30px;
+    -moz-border-radius: 10px 0px 10px 0px;
+    -webkit-border-radius: 10px 0px 10px 0px;
+    border-radius: 10px 0px 10px 0px;
+    margin-right: 10px;
   }
   
   .msg-bubble-right:after {
@@ -352,4 +363,12 @@ body {
   .msg-name {
     margin: 0px 10px;
     color: #fff;
+  }
+  
+  .msg-bubble-right .msg-date-time {
+    font-size: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 5px;
   }
