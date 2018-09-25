@@ -2,7 +2,7 @@ import $ from 'jquery';
 import navigate from '../navigation';
 import isValidEmail from '../validate';
 import isValidPassword from '../validate';
-import {signUp} from '../session';
+import {signUp}from '../session';
 
 
 
@@ -37,7 +37,7 @@ function signUp() {
     </div>
 
         <div class='signUpPwdDiv'><span class='signUptxtDiv'> Repeat Password </span><input type='text' class='signUpRepeatPwdInput'> </div>
-        <button class="signUpPagebtn"> Sign up </button>
+        <button class="signup-btn"> Sign up </button>
     
  `
     return container;

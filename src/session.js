@@ -77,6 +77,7 @@ export function signUp(email, password) {
         var errorCode = error.code;
         var errorMessage = error.message;
         // ...
+        alert(errorMessage)
     });
 
 }
