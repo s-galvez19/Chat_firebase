@@ -13,9 +13,9 @@ function LoginScreen() {
     container.id = 'Login-screen';
     container.classList.add('Login-screen');
     container.innerHTML = `
-    <div class='loginContainer'>
-    <div class='logoContainer'>
-        <img src='./img/s-chat.png' class='logoImage' alt='logo image'>
+    <div class='imgcontainer'>
+    <div class='imgcontainer'>
+        <img src='./img/logo.png' class='logoImage' alt='logo image'>
     </div>
     <div class='inputsContainer'>
         <div class='input1'><span class='usernameTxt'> Username </span><input type='text' class='usernameInput'> </div>
@@ -52,5 +52,6 @@ function initLoginScreenListeners() {
         mountSignUpScreen()
     })
 }
+
 
 

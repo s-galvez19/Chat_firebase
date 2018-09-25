@@ -1,6 +1,6 @@
 form {
     border: 3px solid #f1f1f1;
-   
+    display: block;
 }
 
 /* Full-width inputs */
@@ -15,7 +15,7 @@ input[type=text], input[type=password] {
 
 /* Set a style for all buttons */
 button {
-    background-color:rgb(60, 196, 184);
+    background-color:rgb(90, 82, 165);
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -34,7 +34,6 @@ button:hover {
 .imgcontainer {
     text-align: center;
     margin: 24px 0 12px 0;
-    
 }
 
 /* Avatar image */
@@ -81,7 +80,6 @@ img.avatar {
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(250, 250, 253);
   }
   
   textarea:focus, input:focus{
@@ -240,7 +238,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background: url('../img/iron-man.jpg') 0 0 no-repeat;
+    background: url('../img/chat-bg.jpg') 0 0 no-repeat;
     background-size: cover;
   }
   

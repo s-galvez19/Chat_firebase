@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import Message from '../message';
 
+
 import {signOut} from '../session';
 
 export default
@@ -72,11 +73,32 @@ function initChatScreenListeners(messages) {
 
     $('#chat-messages').html('');
 
+    let currentPerson = '';
+
     for (let mid in msgs) {
       let msg = msgs[mid];
+      let showUsername = true;
 
-      $('#chat-messages').append(Message(msg));
+      if (user.email === msg.email) {
+        currentPerson = msg.email;
+        showUsername = false;
+      }
+      else if (currentPerson === msg.email) {
+        showUsername = false;
+      }
+      else {
+        currentPerson = msg.email;
+      }
+
+      $('#chat-messages').append(Message(msg, showUsername));
     }
+    
+    scroll();
   });
+}
+
+function scroll() {
+  let height = $('#chat-messages')[0].scrollHeight;
+  $('#chat-messages').scrollTop(height);
 }
 

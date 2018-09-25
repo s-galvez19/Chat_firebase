@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import { signUpAuth } from '../session';
+import { signUpSreen } from '../session';
 import navigate from '../navigation';
 
 
@@ -31,12 +31,28 @@ function signUp() {
 const email = $('.signUpEmailInput').val();
 const password = $('.signUpPwdInput').val();
 const confirmPassword = $('.signUpRepeatPwdInput').val();
-
-function initSignUpScreenListeners(){
-    $('.go-back').on('click', function () {
-        navigate('login-screen')
-    })
-    $('.signUpPagebtn').on('click', function(){
-        
-    })
-}
+function initSignUpScreenListeners() {
+    $('#go-back').on('click', function() {
+      navigate('login-screen');
+    });
+  
+    $('#signup-btn').on('click', function(){
+      let email = $('#email').val();
+      let password = $('#password').val();
+      let passwordConfirmation = $('#password-confirmation').val();
+  
+      if (!isValidEmail(email)) {
+        alert('Invalid e-mail');
+      }
+      else if (!isValidPassword(password)) {
+        alert('Invalid password');
+      }
+      else if (password !== passwordConfirmation) {
+        alert('Passwords do not match');
+      }
+      else {
+        signUpWithEmailAndPassword(email, password);
+      }
+      
+    });
+  }
