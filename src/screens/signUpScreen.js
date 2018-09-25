@@ -1,6 +1,8 @@
 import $ from 'jquery';
-import { signUpSreen } from '../session';
 import navigate from '../navigation';
+import isValidEmail from '../validate';
+import isValidPassword from '../validate';
+
 
 
 
