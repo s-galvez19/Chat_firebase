@@ -2,8 +2,8 @@ import $ from 'jquery';
 import navigate from '../navigation';
 import isValidEmail from '../validate';
 import isValidPassword from '../validate';
-import email from 'email';
-import password from 'password';
+import {signUp} from '../session';
+
 
 
 
@@ -43,10 +43,10 @@ function signUp() {
     return container;
 }
 
-export const email = $('.signUpEmailInput').val();
-export const password = $('.signUpPwdInput').val();
-export const confirmPassword = $('.signUpRepeatPwdInput').val();
-function initSignUpScreenListeners() {
+// export const email = $('.signUpEmailInput').val();
+// export const password = $('.signUpPwdInput').val();
+// export const confirmPassword = $('.signUpRepeatPwdInput').val();
+export function initSignUpScreenListeners() {
     $('#go-back').on('click', function() {
       navigate('login-screen');
     });
