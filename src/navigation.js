@@ -1,11 +1,8 @@
 
-import mountLoadingScreen from "./src/screens/loadingScreen";
-import mountloginScreen from "./src/screens/loginScreen";
-import mountChatScreen from "./src/screens/chatScreen";
-import mountSignUpScreen from "./src/screens/signUpScreen";
-
-
-
+import mountLoadingScreen from "./screens/loadingScreen";
+import mountloginScreen from "./screens/loginScreen";
+import mountChatScreen from "./screens/chatScreen";
+import mountSignUpScreen from "./screens/signUpScreen";
 
 export default
     function navigate(screen) {
