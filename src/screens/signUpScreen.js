@@ -49,6 +49,7 @@ function signUp() {
 export function initSignUpScreenListeners() {
     $('#signup-btn').on('click', function() {
       navigate('login-screen');
+      alert(button)
     });
   
     $('#signup-btn').on('click', function(){
