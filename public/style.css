@@ -232,8 +232,8 @@ body {
   
   .go-back svg {
     height: 30px;
-    width: 30px;
-    fill: #fff;
+    width: 2800px;
+    fill: rgb(15, 15, 15);
   }
   
   .chat-screen {
