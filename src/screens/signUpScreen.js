@@ -47,7 +47,7 @@ function signUp() {
 // export const password = $('.signUpPwdInput').val();
 // export const confirmPassword = $('.signUpRepeatPwdInput').val();
 export function initSignUpScreenListeners() {
-    $('#go-back').on('click', function() {
+    $('#signup-btn').on('click', function() {
       navigate('login-screen');
     });
   
